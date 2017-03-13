@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.tencent.qcloud.timchat" >
+    package="timechat.fcgz.sj.time">
 
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 在sdcard中创建/删除文件的权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
 
     <uses-feature
         android:name="android.hardware.camera"
@@ -13,13 +15,15 @@
     <application
         android:name=".MyApplication"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_app"
+        android:icon="@mipmap/app_logo"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.tencent.rdm.uuid"
+            android:value="41434af4-5144-4966-babc-a99d9a80fa06" />
 
- <meta-data android:name="com.tencent.rdm.uuid" android:value="41434af4-5144-4966-babc-a99d9a80fa06" />
-        <activity android:name=".ui.SplashActivity" >
+        <activity android:name=".ui.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -36,12 +40,7 @@
         <activity
             android:name=".ui.ProfileActivity"
             android:launchMode="singleTask" />
-        <activity android:name=".ui.ManageFriendGroupActivity" />
         <activity android:name=".ui.VideoActivity" />
-        <activity android:name=".ui.CreateGroupActivity" />
-        <activity
-            android:name=".ui.GroupProfileActivity"
-            android:launchMode="singleTask" />
 
         <!-- 消息收发service -->
         <service
@@ -55,7 +54,7 @@
         <!-- 离线消息广播接收器 -->
         <receiver
             android:name="com.tencent.qalsdk.QALBroadcastReceiver"
-            android:exported="false" >
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.tencent.qalsdk.broadcast.qal" />
             </intent-filter>
@@ -63,7 +62,7 @@
         <!-- 系统消息广播接收器 -->
         <receiver
             android:name="com.tencent.qalsdk.core.NetConnInfoCenter"
-            android:process=":QALSERVICE" >
+            android:process=":QALSERVICE">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
@@ -80,23 +79,23 @@
 
         <activity android:name=".ui.ImageViewActivity" />
         <activity android:name=".ui.EditActivity" />
-        <activity android:name=".ui.SearchGroupActivity" />
-        <activity android:name=".ui.ApplyGroupActivity" />
-        <activity android:name=".ui.GroupManageMessageActivity" />
         <activity android:name=".ui.FriendshipManageMessageActivity" />
-        <activity android:name=".ui.GroupListActivity" />
         <activity android:name=".ui.ChooseFriendActivity" />
-        <activity android:name=".ui.GroupMemberActivity" />
         <activity
             android:name=".ui.customview.DialogActivity"
             android:theme="@android:style/Theme.Dialog" />
-        <activity android:name=".ui.GroupMemberProfileActivity" />
         <activity android:name=".ui.FriendshipHandleActivity" />
-        <activity android:name=".ui.AboutActivity" />
-        <activity android:name=".ui.BlackListActivity" >
-        </activity>
-        <activity android:name=".ui.ImagePreviewActivity" >
-        </activity>
+        <activity android:name=".ui.BlackListActivity" />
+        <activity android:name=".ui.ImagePreviewActivity" />
+        <activity android:name=".ui.GroupMemberActivity" />
+        <activity android:name=".ui.GroupMemberProfileActivity" />
+        <activity android:name=".ui.GroupProfileActivity" />
+        <activity android:name=".ui.ApplyGroupActivity" />
+        <activity android:name=".ui.customview.SearchGroupActivity" />
+        <activity android:name=".ui.CreateGroupActivity" />
+        <activity android:name=".ui.ManageFriendGroupActivity" />
+        <activity android:name=".ui.PhotoActivity" />
+        <activity android:name=".ui.ModifyPwdActivity" android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

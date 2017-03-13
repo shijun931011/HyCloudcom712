@@ -3,7 +3,9 @@
 
     <string name="tencent_tls_ui_hostLoginTitle">登录</string>
     <string name="tencent_tls_ui_hostRegisterTitle">注册</string>
-    <string name="tencent_tls_ui_independentLoginTitle"></string>
+    <string name="tencent_tls_ui_modiypassword">修改登录密码</string>
+    <string name="tencent_tls_ui_forgetpaddword">找回密码</string>
+    <string name="tencent_tls_ui_independentLoginTitle">系统登录</string>
     <string name="tencent_tls_ui_independentRegisterTitle"></string>
     <string name="tencent_tls_ui_phonepwdLoginTitle">登录</string>
     <string name="tencent_tls_ui_phonepwdRegisterTitle">注册</string>

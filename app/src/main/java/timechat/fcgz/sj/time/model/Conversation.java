@@ -3,7 +3,7 @@ package timechat.fcgz.sj.time.model;
 import android.content.Context;
 
 import com.tencent.TIMConversationType;
-import com.fcgz.sj.timchat.MyApplication;
+
 
 /**
  * 会话数据

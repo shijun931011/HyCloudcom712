@@ -26,7 +26,6 @@ public class ConversationPresenter implements Observer {
 
     private static final String TAG = "ConversationPresenter";
     private ConversationView view;
-
     public ConversationPresenter(ConversationView view){
         //注册消息监听
         MessageEvent.getInstance().addObserver(this);

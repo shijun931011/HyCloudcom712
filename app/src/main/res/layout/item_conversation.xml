@@ -5,7 +5,7 @@
     android:paddingBottom="8dp"
     android:paddingTop="8dp"
     android:paddingLeft="10dp">
-    <com.tencent.qcloud.timchat.ui.customview.CircleImageView
+    <timechat.fcgz.sj.time.ui.customview.CircleImageView
         android:id="@id/avatar"
         android:layout_width="45dp"
         android:layout_height="45dp" />

@@ -1,99 +1,159 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/tencent_tls_ui_background"
-    tools:context=".IndependentLoginActivity">
-
-    <RelativeLayout
-        android:orientation="horizontal"
-        android:layout_width="fill_parent"
-        android:layout_height="50dp"
-        android:layout_alignParentTop="true"
-        android:background="@color/tencent_tls_ui_titleBackground">
-
-        <TextView
-            style="@style/tencent_tls_ui_titleFontStyle"
-            android:text="@string/tencent_tls_ui_independentLoginTitle"/>
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_alignBottom="@id/head"
-        android:background="@color/tencent_tls_ui_shadowgray"/>
+     xmlns:tools="http://schemas.android.com/tools"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:background="@color/tencent_tls_ui_background"
+     tools:context=".IndependentLoginActivity">
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:paddingLeft="@dimen/tencent_tls_ui_activity_horizontal_margin"
-        android:paddingRight="@dimen/tencent_tls_ui_activity_horizontal_margin">
-
-        <EditText
-            android:id="@+id/username"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1"
+        >
+        <TextView
+            android:id="@+id/login"
             android:layout_width="fill_parent"
-            android:layout_height="@dimen/tencent_tls_ui_edittext_height"
-            android:paddingLeft="@dimen/tencent_tls_ui_edittext_leftpadding"
-            android:layout_marginBottom="@dimen/tencent_tls_ui_edittext_margin"
-            android:background="@drawable/tencent_tls_ui_rounded_rectangle_normal"
-            android:singleLine="true"
-            android:hint="用户名"/>
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center_horizontal"
+            android:paddingTop="15dp"
+            android:text="系统登录"
+            android:textSize="20sp"
+            android:textColor="#000000" />
 
-        <EditText
-            android:id="@+id/password"
+        <ImageView
+            android:id="@+id/login_head"
             android:layout_width="fill_parent"
-            android:layout_height="@dimen/tencent_tls_ui_edittext_height"
-            android:paddingLeft="@dimen/tencent_tls_ui_edittext_leftpadding"
-            android:layout_marginBottom="@dimen/tencent_tls_ui_edittext_margin"
-            android:background="@drawable/tencent_tls_ui_rounded_rectangle_normal"
-            android:inputType="textPassword"
-            android:singleLine="true"
-            android:hint="密码"/>
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center_horizontal"
+            android:paddingTop="30dp"
+            android:src="@mipmap/people"/>
 
-        <Button
-            android:id="@+id/btn_login"
-            android:layout_width="fill_parent"
-            android:layout_height="@dimen/tencent_tls_ui_edittext_height"
-            android:background="@drawable/tencent_tls_ui_btn_blue_bg"
-            android:layout_marginTop="@dimen/tencent_tls_ui_edittext_margin"
-            android:layout_marginBottom="20dp"
-            android:textSize="@dimen/tencent_tls_ui_buttonFontSize"
-            android:textColor="@color/tencent_tls_ui_white"
-            android:text="登录"/>
+        <LinearLayout
+             android:orientation="vertical"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_centerInParent="true"
+             android:paddingLeft="@dimen/tencent_tls_ui_activity_horizontal_margin"
+             android:paddingRight="@dimen/tencent_tls_ui_activity_horizontal_margin"
+            android:layout_marginTop="15dp"
+             android:weightSum="1">
 
-        <FrameLayout
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content">
+            <com.tencent.qcloud.tlslibrary.customview.EditTextWithListPopupWindow
+                android:id="@+id/selectCountryCode"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/tencent_tls_ui_rounded_rectangle_normal"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="10dp"
+                android:windowSoftInputMode="stateAlwaysHidden"
+                android:text="中国大陆+86"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                android:background="@drawable/border_bg"
+                >
+                <EditText
+                    android:id="@+id/phone"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/tencent_tls_ui_edittext_height"
+                    android:paddingLeft="@dimen/tencent_tls_ui_edittext_leftpadding"
+                    android:layout_marginBottom="@dimen/tencent_tls_ui_edittext_margin"
+                    android:layout_marginTop="15dp"
+                    android:background="@android:color/transparent"
+                    android:singleLine="true"
+                    android:hint="请输入用户手机号"/>
 
-            <TextView
-                android:id="@+id/hostLogin"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center|left"
-                android:textColor="@color/tencent_tls_ui_defaultButtonColor"
-                android:text="@string/tencent_tls_ui_hostLoginTitle"/>
+                <ImageView
+                    android:id="@+id/login_edit_head"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/peopele2"
+                    android:layout_alignBottom="@+id/phone"
+                    android:paddingLeft="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignTop="@+id/phone" />
 
-            <TextView
-                android:id="@+id/registerNewUser"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center|right"
-                android:textColor="@color/tencent_tls_ui_defaultButtonColor"
-                android:text="注册新用户"/>
+            </RelativeLayout>
 
-        </FrameLayout>
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="30dp"
+                android:orientation="vertical"
+                android:background="@drawable/border_bg"
+                >
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/tencent_tls_ui_edittext_height"
+                    android:paddingLeft="@dimen/tencent_tls_ui_edittext_leftpadding"
+                    android:paddingTop="12dp"
+                    android:background="@android:color/transparent"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    android:hint="请输入用户密码"/>
+                <ImageView
+                    android:id="@+id/password_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/password3"
+                    android:layout_marginBottom="3dp"
+                    android:paddingLeft="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignBottom="@+id/password" />
+            </RelativeLayout>
 
+               <Button
+                  android:id="@+id/btn_login"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:background="@drawable/tencent_tls_ui_btn_blue_bg"
+                   android:layout_marginLeft="20dp"
+                   android:layout_marginRight="20dp"
+                   android:layout_marginBottom="8dp"
+                  android:textSize="@dimen/tencent_tls_ui_buttonFontSize"
+                  android:textColor="@color/tencent_tls_ui_white"
+                  android:text="登录"
+                  android:layout_weight="0.03" />
+            <FrameLayout
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/frogetpassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:textColor="@color/tencent_tls_ui_defaultButtonColor"
+                    android:text="忘记密码？"/>
+
+                <TextView
+                        android:id="@+id/registerNewUser"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|right"
+                        android:textColor="@color/tencent_tls_ui_defaultButtonColor"
+                        android:text="注册新用户"/>
+            </FrameLayout>
+
+        </LinearLayout>
     </LinearLayout>
 
-<!--    <fragment android:name="com.tencent.qcloud.tlslibrary.fragment.QQWXFragment"
-        android:id="@+id/qqwxfragment"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        tools:layout="@layout/tencent_tls_ui_fragment_qqwx" />-->
+
+
 
 </RelativeLayout>
-

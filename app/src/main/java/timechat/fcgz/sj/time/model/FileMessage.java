@@ -10,8 +10,10 @@ import android.widget.Toast;
 import com.tencent.TIMFileElem;
 import com.tencent.TIMMessage;
 import com.tencent.TIMValueCallBack;
-import com.fcgz.sj.timchat.MyApplication;
 
+
+import timechat.fcgz.sj.time.MyApplication;
+import timechat.fcgz.sj.time.R;
 import timechat.fcgz.sj.time.adapters.ChatAdapter;
 import timechat.fcgz.sj.time.utils.FileUtil;
 
@@ -47,7 +49,7 @@ public class FileMessage extends Message {
         TIMFileElem e = (TIMFileElem) message.getElement(0);
         TextView tv = new TextView(MyApplication.getContext());
         tv.setTextSize(TypedValue.COMPLEX_UNIT_SP, 18);
-        tv.setTextColor(MyApplication.getContext().getResources().getColor(isSelf() ? timechat.fcgz.sj.time.R.color.white : timechat.fcgz.sj.time.R.color.black));
+        tv.setTextColor(MyApplication.getContext().getResources().getColor(isSelf() ?  R.color.white :  R.color.black));
         tv.setText(e.getFileName());
         getBubbleView(viewHolder).addView(tv);
         showStatus(viewHolder);
@@ -79,9 +81,9 @@ public class FileMessage extends Message {
                 String[] str = e.getFileName().split("/");
                 String filename = str[str.length-1];
                 if (FileUtil.createFile(bytes, filename, Environment.DIRECTORY_DOWNLOADS)){
-                    Toast.makeText(MyApplication.getContext(), MyApplication.getContext().getString(timechat.fcgz.sj.time.R.string.save_succ),Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MyApplication.getContext(), MyApplication.getContext().getString(R.string.save_succ),Toast.LENGTH_SHORT).show();
                 }else{
-                    Toast.makeText(MyApplication.getContext(), MyApplication.getContext().getString(timechat.fcgz.sj.time.R.string.save_fail),Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MyApplication.getContext(), MyApplication.getContext().getString(R.string.save_fail),Toast.LENGTH_SHORT).show();
                 }
             }
         });

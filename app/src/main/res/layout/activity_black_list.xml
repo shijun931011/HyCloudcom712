@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    tools:context="com.tencent.qcloud.timchat.ui.BlackListActivity">
+    tools:context="com.fcgz.sj.timchat.timechat.fcgz.sj.timchat.ui.BlackListActivity">
     <com.tencent.qcloud.timchat.ui.customview.TemplateTitle
         android:id="@+id/group_mem_title"
         android:layout_width="match_parent"

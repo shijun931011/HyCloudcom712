@@ -7,7 +7,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-import com.tencent.qcloud.tlslibrary.activity.ImgCodeActivity;
 import com.tencent.qcloud.tlslibrary.helper.Util;
 
 import tencent.tls.platform.TLSErrInfo;
@@ -24,13 +23,11 @@ public class AccountLoginService {
     private Context context;
     private EditText txt_username;
     private EditText txt_password;
-
     private String username;
     private String password;
 
     private TLSService tlsService;
     public  static PwdLoginListener pwdLoginListener;
-
 
     public AccountLoginService(Context context,
                                EditText txt_username,
@@ -70,15 +67,15 @@ public class AccountLoginService {
 
         @Override
         public void OnPwdLoginReaskImgcodeSuccess(byte[] picData) {
-            ImgCodeActivity.fillImageview(picData);
+//            ImgCodeActivity.fillImageview(picData);
         }
 
         @Override
         public void OnPwdLoginNeedImgcode(byte[] picData, TLSErrInfo errInfo) {
-            Intent intent = new Intent(context, ImgCodeActivity.class);
-            intent.putExtra(Constants.EXTRA_IMG_CHECKCODE, picData);
-            intent.putExtra(Constants.EXTRA_LOGIN_WAY, Constants.USRPWD_LOGIN);
-            context.startActivity(intent);
+//            Intent intent = new Intent(context, ImgCodeActivity.class);
+//            intent.putExtra(Constants.EXTRA_IMG_CHECKCODE, picData);
+//            intent.putExtra(Constants.EXTRA_LOGIN_WAY, Constants.USRPWD_LOGIN);
+//            context.startActivity(intent);
         }
 
         @Override

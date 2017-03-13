@@ -2,139 +2,148 @@
 <items version="2" >
 
     <item
-        is-multidex="false"
-        jar="D:\MyDownloads\HyCloudcom712\HyCloudcom712\HyCloudcom712\app\build\intermediates\exploded-aar\HyCloudcom712\sdk\unspecified\jars\libs\open_sdk.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.1"
-        sha1="9df6cd90896d8685876a6e89d18a23d9240af9a0">
-        <dex dex="D:\MyDownloads\HyCloudcom712\HyCloudcom712\HyCloudcom712\app\build\intermediates\pre-dexed\debug\open_sdk_8000008db57e570ba2d7cdc8cc6343d5ab89437d.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="D:\MyDownloads\HyCloudcom712\HyCloudcom712\HyCloudcom712\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.1"
-        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
-        <dex dex="D:\MyDownloads\HyCloudcom712\HyCloudcom712\HyCloudcom712\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.4.0_a8eeadc7d52aa9c74f210c340682663ffd6ae17a.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="D:\MyDownloads\HyCloudcom712\HyCloudcom712\HyCloudcom712\app\build\intermediates\exploded-aar\HyCloudcom712\sdk\unspecified\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.1"
-        sha1="b79e6d0060d3075acc7a5581f6a673afb7b4e056">
-        <dex dex="D:\MyDownloads\HyCloudcom712\HyCloudcom712\HyCloudcom712\app\build\intermediates\pre-dexed\debug\HyCloudcom712-sdk-unspecified_03b638f2d3d7bdb3eaeea04ecbfc8dcf3a3b0d2d.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="D:\MyDownloads\HyCloudcom712\HyCloudcom712\HyCloudcom712\app\build\intermediates\exploded-aar\HyCloudcom712\sdk\unspecified\jars\libs\wup-1.0.0-SNAPSHOT.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.1"
-        sha1="523e2a8215dfdb1ab79df5a3f1c3635d80e19f6b">
-        <dex dex="D:\MyDownloads\HyCloudcom712\HyCloudcom712\HyCloudcom712\app\build\intermediates\pre-dexed\debug\wup-1.0.0-SNAPSHOT_347e6307cfd990eb7a0b349afdfb61b5c9ecfec6.jar" />
-    </item>
-    <item
-        is-multidex="false"
+        is-multidex="true"
         jar="D:\MyDownloads\HyCloudcom712\HyCloudcom712\HyCloudcom712\app\build\intermediates\exploded-aar\HyCloudcom712\sdk\unspecified\jars\libs\tls_sdk.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.1"
         sha1="32113d503d38e50f2238f14c340dd8637c6f4d4d">
-        <dex dex="D:\MyDownloads\HyCloudcom712\HyCloudcom712\HyCloudcom712\app\build\intermediates\pre-dexed\debug\tls_sdk_45af33391b10ba374dbd662a14d4b75722f45cdd.jar" />
+        <dex dex="D:\MyDownloads\HyCloudcom712\HyCloudcom712\HyCloudcom712\app\build\intermediates\transforms\dex\debug\folders\1000\8\tls_sdk_45af33391b10ba374dbd662a14d4b75722f45cdd\classes.dex" />
     </item>
     <item
-        is-multidex="false"
+        is-multidex="true"
+        jar="D:\MyDownloads\HyCloudcom712\HyCloudcom712\HyCloudcom712\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="D:\MyDownloads\HyCloudcom712\HyCloudcom712\HyCloudcom712\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.4.0_c16d34107f96602a22e49c9bcb0f85cc99ee5ca4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\user\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\23.4.0\support-annotations-23.4.0.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.1"
         sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
-        <dex dex="D:\MyDownloads\HyCloudcom712\HyCloudcom712\HyCloudcom712\app\build\intermediates\pre-dexed\debug\support-annotations-23.4.0_2f2699918670dc35d347d5e3ab53230ec67b904a.jar" />
+        <dex dex="D:\MyDownloads\HyCloudcom712\HyCloudcom712\HyCloudcom712\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.4.0_2f2699918670dc35d347d5e3ab53230ec67b904a\classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="D:\MyDownloads\HyCloudcom712\HyCloudcom712\HyCloudcom712\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.1\jars\classes.jar"
+        is-multidex="true"
+        jar="D:\MyDownloads\HyCloudcom712\HyCloudcom712\HyCloudcom712\app\build\intermediates\exploded-aar\HyCloudcom712\sdk\unspecified\jars\libs\wup-1.0.0-SNAPSHOT.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.1"
-        sha1="4486e953d1f35f8ccab098b1dd67146366d5f731">
-        <dex dex="D:\MyDownloads\HyCloudcom712\HyCloudcom712\HyCloudcom712\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-22.2.1_fc5332215d0f9135f37b8c8958205c94a70e2ee0.jar" />
+        sha1="523e2a8215dfdb1ab79df5a3f1c3635d80e19f6b">
+        <dex dex="D:\MyDownloads\HyCloudcom712\HyCloudcom712\HyCloudcom712\app\build\intermediates\transforms\dex\debug\folders\1000\8\wup-1.0.0-SNAPSHOT_347e6307cfd990eb7a0b349afdfb61b5c9ecfec6\classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="D:\MyDownloads\HyCloudcom712\HyCloudcom712\HyCloudcom712\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\libs\internal_impl-23.4.0.jar"
+        is-multidex="true"
+        jar="D:\MyDownloads\HyCloudcom712\HyCloudcom712\HyCloudcom712\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.1"
-        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
-        <dex dex="D:\MyDownloads\HyCloudcom712\HyCloudcom712\HyCloudcom712\app\build\intermediates\pre-dexed\debug\internal_impl-23.4.0_ce8c7432bbe9dd5a3d2b3fa1b6c73d7a86f27b59.jar" />
+        sha1="c9d2e03b73195b904c4ee691f93f9cff8516611c">
+        <dex dex="D:\MyDownloads\HyCloudcom712\HyCloudcom712\HyCloudcom712\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_04693d65e3ddc902aefb77edb147ba76850729fd\classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="D:\MyDownloads\HyCloudcom712\HyCloudcom712\HyCloudcom712\app\build\intermediates\exploded-aar\HyCloudcom712\tlslibrary\unspecified\jars\classes.jar"
+        is-multidex="true"
+        jar="D:\MyDownloads\HyCloudcom712\HyCloudcom712\HyCloudcom712\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.1"
-        sha1="1038c6ad97e149cf28fe23a958da04b0132baa64">
-        <dex dex="D:\MyDownloads\HyCloudcom712\HyCloudcom712\HyCloudcom712\app\build\intermediates\pre-dexed\debug\HyCloudcom712-tlslibrary-unspecified_52b125153ccd97f2c12b464fd8b13a91f58313ea.jar" />
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="D:\MyDownloads\HyCloudcom712\HyCloudcom712\HyCloudcom712\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.4.0_a8eeadc7d52aa9c74f210c340682663ffd6ae17a\classes.dex" />
     </item>
     <item
-        is-multidex="false"
+        is-multidex="true"
         jar="D:\MyDownloads\HyCloudcom712\HyCloudcom712\HyCloudcom712\app\build\intermediates\exploded-aar\HyCloudcom712\sdk\unspecified\jars\libs\mobilepb.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.1"
         sha1="12db2628b7d6bcc9bb7632941f499bf860c503a4">
-        <dex dex="D:\MyDownloads\HyCloudcom712\HyCloudcom712\HyCloudcom712\app\build\intermediates\pre-dexed\debug\mobilepb_e070059a0ff62484682132c49ced2da35af78eae.jar" />
+        <dex dex="D:\MyDownloads\HyCloudcom712\HyCloudcom712\HyCloudcom712\app\build\intermediates\transforms\dex\debug\folders\1000\8\mobilepb_e070059a0ff62484682132c49ced2da35af78eae\classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="D:\MyDownloads\HyCloudcom712\HyCloudcom712\HyCloudcom712\app\build\intermediates\exploded-aar\HyCloudcom712\sdk\unspecified\jars\libs\imsdk.jar"
+        is-multidex="true"
+        jar="D:\MyDownloads\HyCloudcom712\HyCloudcom712\HyCloudcom712\app\build\intermediates\exploded-aar\HyCloudcom712\sdk\unspecified\jars\libs\open_sdk.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.1"
-        sha1="5b605a7c5ec71640dd8222a85a982524de10acd9">
-        <dex dex="D:\MyDownloads\HyCloudcom712\HyCloudcom712\HyCloudcom712\app\build\intermediates\pre-dexed\debug\imsdk_773fcae3cd5354f775118394f0bd3ca3ea25e79e.jar" />
+        sha1="9df6cd90896d8685876a6e89d18a23d9240af9a0">
+        <dex dex="D:\MyDownloads\HyCloudcom712\HyCloudcom712\HyCloudcom712\app\build\intermediates\transforms\dex\debug\folders\1000\8\open_sdk_8000008db57e570ba2d7cdc8cc6343d5ab89437d\classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="D:\MyDownloads\HyCloudcom712\HyCloudcom712\HyCloudcom712\app\build\intermediates\exploded-aar\HyCloudcom712\sdk\unspecified\jars\libs\qalsdk.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.1"
-        sha1="7ced6b133b2402235dc654a37d61ef425a5f5fc3">
-        <dex dex="D:\MyDownloads\HyCloudcom712\HyCloudcom712\HyCloudcom712\app\build\intermediates\pre-dexed\debug\qalsdk_af87ce6a369c47a57832783550a8ed3cdbb4fe2b.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="D:\MyDownloads\HyCloudcom712\HyCloudcom712\HyCloudcom712\app\build\intermediates\exploded-aar\HyCloudcom712\sdk\unspecified\jars\libs\bugly_1.3.0_imsdk_release.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.1"
-        sha1="6073f74ee2b7805d5af61e306f694c380abf8f32">
-        <dex dex="D:\MyDownloads\HyCloudcom712\HyCloudcom712\HyCloudcom712\app\build\intermediates\pre-dexed\debug\bugly_1.3.0_imsdk_release_545378e00ac379035e675411f3e7b323a1f5bc63.jar" />
-    </item>
-    <item
-        is-multidex="false"
+        is-multidex="true"
         jar="D:\MyDownloads\HyCloudcom712\HyCloudcom712\HyCloudcom712\app\build\intermediates\exploded-aar\HyCloudcom712\sdk\unspecified\jars\libs\libammsdk.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.1"
         sha1="b5fe9dcdaca41bdb2874b503a628723c658346c8">
-        <dex dex="D:\MyDownloads\HyCloudcom712\HyCloudcom712\HyCloudcom712\app\build\intermediates\pre-dexed\debug\libammsdk_1ccafa76ccb2695b26c689625e5bb522297a2209.jar" />
+        <dex dex="D:\MyDownloads\HyCloudcom712\HyCloudcom712\HyCloudcom712\app\build\intermediates\transforms\dex\debug\folders\1000\8\libammsdk_1ccafa76ccb2695b26c689625e5bb522297a2209\classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="D:\MyDownloads\HyCloudcom712\HyCloudcom712\HyCloudcom712\app\build\intermediates\exploded-aar\HyCloudcom712\presentation\unspecified\jars\classes.jar"
+        is-multidex="true"
+        jar="D:\MyDownloads\HyCloudcom712\HyCloudcom712\HyCloudcom712\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.1"
-        sha1="946b3cab2c55ebb6befb8ad70f4da10e046fe83b">
-        <dex dex="D:\MyDownloads\HyCloudcom712\HyCloudcom712\HyCloudcom712\app\build\intermediates\pre-dexed\debug\HyCloudcom712-presentation-unspecified_773ff8906210f7676f97d2e8af28b188c35e7fcc.jar" />
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="D:\MyDownloads\HyCloudcom712\HyCloudcom712\HyCloudcom712\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-23.4.0_61a28eb28e21a84853e56a8c6c06542fcd7179be\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\MyDownloads\HyCloudcom712\HyCloudcom712\HyCloudcom712\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\libs\internal_impl-23.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="D:\MyDownloads\HyCloudcom712\HyCloudcom712\HyCloudcom712\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.4.0_ce8c7432bbe9dd5a3d2b3fa1b6c73d7a86f27b59\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\MyDownloads\HyCloudcom712\HyCloudcom712\HyCloudcom712\app\build\intermediates\exploded-aar\HyCloudcom712\sdk\unspecified\jars\libs\bugly_1.3.0_imsdk_release.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="6073f74ee2b7805d5af61e306f694c380abf8f32">
+        <dex dex="D:\MyDownloads\HyCloudcom712\HyCloudcom712\HyCloudcom712\app\build\intermediates\transforms\dex\debug\folders\1000\8\bugly_1.3.0_imsdk_release_545378e00ac379035e675411f3e7b323a1f5bc63\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\MyDownloads\HyCloudcom712\HyCloudcom712\HyCloudcom712\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="D:\MyDownloads\HyCloudcom712\HyCloudcom712\HyCloudcom712\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-23.4.0_0040d7e53289916b69ba2751de529b97cce8b4d2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\MyDownloads\HyCloudcom712\HyCloudcom712\HyCloudcom712\app\build\intermediates\exploded-aar\HyCloudcom712\sdk\unspecified\jars\libs\imsdk.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="5b605a7c5ec71640dd8222a85a982524de10acd9">
+        <dex dex="D:\MyDownloads\HyCloudcom712\HyCloudcom712\HyCloudcom712\app\build\intermediates\transforms\dex\debug\folders\1000\8\imsdk_773fcae3cd5354f775118394f0bd3ca3ea25e79e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\MyDownloads\HyCloudcom712\HyCloudcom712\HyCloudcom712\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="bee8619f6e0b9c14373f4364d5aad2912b400b51">
+        <dex dex="D:\MyDownloads\HyCloudcom712\HyCloudcom712\HyCloudcom712\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_2c8dd2f121494b51faea5dbfe12125350787f4d4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\MyDownloads\HyCloudcom712\HyCloudcom712\HyCloudcom712\app\build\intermediates\exploded-aar\HyCloudcom712\sdk\unspecified\jars\libs\qalsdk.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="7ced6b133b2402235dc654a37d61ef425a5f5fc3">
+        <dex dex="D:\MyDownloads\HyCloudcom712\HyCloudcom712\HyCloudcom712\app\build\intermediates\transforms\dex\debug\folders\1000\8\qalsdk_af87ce6a369c47a57832783550a8ed3cdbb4fe2b\classes.dex" />
     </item>
 
 </items>

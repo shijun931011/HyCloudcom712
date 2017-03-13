@@ -5,14 +5,14 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/black"
-    tools:context="com.tencent.qcloud.timchat.ui.ImagePreviewActivity">
+    tools:context="com.fcgz.sj.timchat.timechat.fcgz.sj.timchat.ui.ImagePreviewActivity">
     <ImageView
         android:id="@+id/image"
         android:layout_centerInParent="true"
         android:scaleType="centerCrop"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
-    <com.tencent.qcloud.timchat.ui.customview.TemplateTitle
+    <timechat.fcgz.sj.time.ui.customview.TemplateTitle
         android:id="@+id/imagePreviewTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

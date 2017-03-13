@@ -1,10 +1,12 @@
 package timechat.fcgz.sj.time.utils;
 
-import com.fcgz.sj.timchat.MyApplication;
+
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
+
+import timechat.fcgz.sj.time.MyApplication;
 
 
 /**

@@ -4,6 +4,9 @@ import android.content.Context;
 import android.widget.Button;
 import android.widget.Toast;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 import tencent.tls.platform.TLSErrInfo;
 
 /**
@@ -14,25 +17,28 @@ public class Util {
 
     /**
      * @function 将国家码和手机号拼接成86-15112345678的形式
-     * @param countryCode 国家码
-     * @param phoneNumber 手机号
+     * @param
+     * @param
      * @return 返回拼接后的字符串
      * */
     public static String getWellFormatMobile(String countryCode, String phoneNumber) {
         return countryCode + "-" + phoneNumber;
     }
 
+
     /**
      * @function 判断手机号是否有效
      * @param phoneNumber 手机号
      * @return 有效则返回true, 无效则返回false
      * */
-    public static boolean validPhoneNumber(String countryCode, String phoneNumber) {
-        if (countryCode.equals("86"))
+    public static boolean validPhoneNumber(String countryCode,String phoneNumber) {
+        if (countryCode.equals("86")) {
             return phoneNumber.length() == 11 && phoneNumber.matches("[0-9]{1,}");
-        else
+        }else{
             return phoneNumber.matches("[0-9]{1,}");
+        }
     }
+
 
     /**
      * @function 在按钮上启动一个定时器

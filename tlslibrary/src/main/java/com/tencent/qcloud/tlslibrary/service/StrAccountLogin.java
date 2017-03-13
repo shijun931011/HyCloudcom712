@@ -5,7 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 
 import com.tencent.qcloud.sdk.Constant;
-import com.tencent.qcloud.tlslibrary.activity.ImgCodeActivity;
+//import com.tencent.qcloud.tlslibrary.activity.ImgCodeActivity;
 import com.tencent.qcloud.tlslibrary.helper.Util;
 
 import tencent.tls.platform.TLSErrInfo;
@@ -35,15 +35,15 @@ public class StrAccountLogin {
 
             @Override
             public void OnPwdLoginReaskImgcodeSuccess(byte[] picData) {
-                ImgCodeActivity.fillImageview(picData);
+//                ImgCodeActivity.fillImageview(picData);
             }
 
             @Override
             public void OnPwdLoginNeedImgcode(byte[] picData, TLSErrInfo errInfo) {
-                Intent intent = new Intent(context, ImgCodeActivity.class);
-                intent.putExtra(Constants.EXTRA_IMG_CHECKCODE, picData);
-                intent.putExtra(Constants.EXTRA_LOGIN_WAY, Constants.USRPWD_LOGIN);
-                context.startActivity(intent);
+//                Intent intent = new Intent(context, ImgCodeActivity.class);
+//                intent.putExtra(Constants.EXTRA_IMG_CHECKCODE, picData);
+//                intent.putExtra(Constants.EXTRA_LOGIN_WAY, Constants.USRPWD_LOGIN);
+//                context.startActivity(intent);
             }
 
             @Override

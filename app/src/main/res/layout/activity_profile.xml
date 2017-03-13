@@ -5,9 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.tencent.qcloud.timchat.ui.ProfileActivity">
+    tools:context="com.fcgz.sj.timchat.timechat.fcgz.sj.timchat.ui.ProfileActivity">
 
-    <com.tencent.qcloud.timchat.ui.customview.TemplateTitle
+    <timechat.fcgz.sj.time.ui.customview.TemplateTitle
         android:id="@+id/profile_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -23,7 +23,7 @@
         android:gravity="center_horizontal"
         android:orientation="vertical">
 
-        <com.tencent.qcloud.timchat.ui.customview.CircleImageView
+        <timechat.fcgz.sj.time.ui.customview.CircleImageView
             android:id="@+id/avatar"
             android:layout_width="115dp"
             android:layout_height="115dp"
@@ -38,25 +38,25 @@
             android:textColor="@color/text_gray1"
             android:textSize="16sp" />
     </LinearLayout>
-    <com.tencent.qcloud.timchat.ui.customview.LineControllerView
+    <timechat.fcgz.sj.time.ui.customview.LineControllerView
         android:id="@+id/id"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         app:name="@string/profile_id"/>
-    <com.tencent.qcloud.timchat.ui.customview.LineControllerView
+    <timechat.fcgz.sj.time.ui.customview.LineControllerView
         android:id="@+id/remark"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:canNav="true"
         app:name="@string/profile_remark"/>
-    <com.tencent.qcloud.timchat.ui.customview.LineControllerView
+    <timechat.fcgz.sj.time.ui.customview.LineControllerView
         android:id="@+id/blackList"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:isSwitch="true"
         app:name="@string/profile_black"/>
-    <com.tencent.qcloud.timchat.ui.customview.LineControllerView
+    <timechat.fcgz.sj.time.ui.customview.LineControllerView
         android:id="@+id/group"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

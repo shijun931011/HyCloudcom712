@@ -10,8 +10,9 @@ import com.tencent.TIMConversationType;
 import com.tencent.TIMGroupReceiveMessageOpt;
 import com.tencent.TIMMessage;
 import com.tencent.qcloud.presentation.event.MessageEvent;
-import com.fcgz.sj.timchat.MyApplication;
 
+
+import timechat.fcgz.sj.time.MyApplication;
 import timechat.fcgz.sj.time.model.Message;
 import timechat.fcgz.sj.time.model.MessageFactory;
 import timechat.fcgz.sj.time.ui.HomeActivity;

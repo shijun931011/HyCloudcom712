@@ -31,10 +31,7 @@ import java.util.List;
  * 好友关系链管理逻辑
  */
 public class FriendshipManagerPresenter {
-
-
     private static final String TAG = "FriendManagerPresenter";
-
     private FriendshipMessageView friendshipMessageView;
     private FriendshipManageView friendshipManageView;
     private FriendInfoView friendInfoView;
@@ -60,9 +57,6 @@ public class FriendshipManagerPresenter {
         friendshipMessageView = view1;
         friendInfoView = view3;
     }
-
-
-
 
     /**
      * 获取好友关系链最后一条消息,和未读消息数

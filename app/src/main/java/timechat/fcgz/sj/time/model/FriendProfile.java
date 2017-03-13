@@ -4,8 +4,10 @@ import android.content.Context;
 import android.content.Intent;
 
 import com.tencent.TIMUserProfile;
-import com.fcgz.sj.timchat.MyApplication;
 
+
+import timechat.fcgz.sj.time.MyApplication;
+import timechat.fcgz.sj.time.R;
 import timechat.fcgz.sj.time.ui.AddFriendActivity;
 import timechat.fcgz.sj.time.ui.ProfileActivity;
 
@@ -106,7 +108,7 @@ public class FriendProfile implements ProfileSummary {
      */
     public String getGroupName(){
         if (profile.getFriendGroups().size() == 0){
-            return MyApplication.getContext().getString(timechat.fcgz.sj.time.R.string.default_group_name);
+            return MyApplication.getContext().getString( R.string.default_group_name);
         }else{
             return profile.getFriendGroups().get(0);
         }

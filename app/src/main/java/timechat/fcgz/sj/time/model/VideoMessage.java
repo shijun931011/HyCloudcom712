@@ -15,8 +15,9 @@ import com.tencent.TIMMessage;
 import com.tencent.TIMSnapshot;
 import com.tencent.TIMVideo;
 import com.tencent.TIMVideoElem;
-import com.fcgz.sj.timchat.MyApplication;
 
+
+import timechat.fcgz.sj.time.MyApplication;
 import timechat.fcgz.sj.time.adapters.ChatAdapter;
 import timechat.fcgz.sj.time.ui.VideoActivity;
 import timechat.fcgz.sj.time.utils.FileUtil;

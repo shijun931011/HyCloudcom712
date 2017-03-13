@@ -5,9 +5,9 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/background"
-    tools:context="com.tencent.qcloud.timchat.ui.SettingFragment">
+    tools:context="com.fcgz.sj.timchat.timechat.fcgz.sj.timchat.ui.SettingFragment">
 
-    <com.tencent.qcloud.timchat.ui.customview.TemplateTitle
+    <timechat.fcgz.sj.time.ui.customview.TemplateTitle
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:titleText="@string/home_setting_tab" />
@@ -21,11 +21,14 @@
         android:background="@color/white"
         android:gravity="center_vertical"
         android:orientation="horizontal">
-        <com.tencent.qcloud.timchat.ui.customview.CircleImageView
+        <timechat.fcgz.sj.time.ui.customview.CircleImageView
+            android:id="@+id/head_me"
             android:layout_width="45dp"
             android:layout_height="45dp"
             android:layout_marginLeft="20dp"
             android:src="@drawable/head_me"/>
+        <!--<include layout="@layout/activity_photo"></include>-->
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -48,11 +51,9 @@
                 android:textSize="14sp"/>
         </LinearLayout>
     </LinearLayout>
-    <View android:layout_width="match_parent"
-        android:layout_height="1px"
-        android:background="@color/line" />
 
-    <com.tencent.qcloud.timchat.ui.customview.LineControllerView
+
+    <timechat.fcgz.sj.time.ui.customview.LineControllerView
         android:id="@+id/nickName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -61,28 +62,51 @@
         app:canNav="true"/>
 
     
-    <com.tencent.qcloud.timchat.ui.customview.LineControllerView
-        android:id="@+id/friendConfirm"
+    <timechat.fcgz.sj.time.ui.customview.LineControllerView
+        android:id="@+id/company"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:name="@string/setting_friend_confirm"
-        app:content="@string/setting_friend_need_confirm"
+        app:name="@string/setting_company"
+        app:content="@string/company"
         app:canNav="true"/>
-    <com.tencent.qcloud.timchat.ui.customview.LineControllerView
-        android:id="@+id/blackList"
+    <timechat.fcgz.sj.time.ui.customview.LineControllerView
+        android:id="@+id/department"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:name="@string/setting_black_list"
+        app:name="@string/setting_department"
+        app:content="@string/department"
         app:canNav="true"/>
-    <com.tencent.qcloud.timchat.ui.customview.LineControllerView
-        android:id="@+id/about"
+
+    <timechat.fcgz.sj.time.ui.customview.LineControllerView
+        android:id="@+id/setting_phone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:name="@string/setting_about"
+        app:name="@string/setting_phone"
+        app:content="@string/phone"
         app:isBottom="true"
         app:canNav="true"/>
 
+    <timechat.fcgz.sj.time.ui.customview.LineControllerView
+        android:id="@+id/area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:name="@string/setting_area"
+        app:content="@string/area"
+        app:isBottom="true"
+        app:canNav="true"/>
 
+    <View android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line"
+        android:layout_marginTop="20dp"/>
+
+    <timechat.fcgz.sj.time.ui.customview.LineControllerView
+        android:id="@+id/Modify_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:name="@string/setting_Modify_password"
+        app:isBottom="true"
+        app:canNav="true"/>
 
     <TextView
         android:id="@+id/logout"

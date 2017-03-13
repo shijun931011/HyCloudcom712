@@ -5,7 +5,7 @@ import com.tencent.TIMGroupCacheInfo;
 import com.tencent.TIMGroupMemberRoleType;
 import com.tencent.TIMGroupReceiveMessageOpt;
 import com.tencent.qcloud.presentation.event.GroupEvent;
-import com.fcgz.sj.timchat.MyApplication;
+
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -14,6 +14,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Observable;
 import java.util.Observer;
+
+import timechat.fcgz.sj.time.MyApplication;
 
 /**
  * 群数据结构

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">海银云通讯</string>
+    <string name="app_name">微云通讯</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
@@ -45,29 +45,28 @@
 
     <!-- contact fragment -->
     <string name="home_contact_tab">通讯录</string>
-    <string name="new_friend"></string>
-    <string name="public_group"></string>
-
-    <string name="discuss_group"></string>
-
-
-
-
-
-
-    <string name="chatroom"></string>
+    <string name="new_friend">新朋友</string>
+    <string name="public_group">群聊</string>
+    <string name="discuss_group">讨论组</string>
+    <string name="chatroom">聊天室</string>
     <string name="addfriend">添加好友</string>
-    <string name="contact_add_group"></string>
-    <string name="manangergroup"></string>
-
+    <string name="contact_add_group">新增分组</string>
+    <string name="manangergroup">新增分组</string>
 
     <!-- settings fragment -->
     <string name="setting_logout">退出登录</string>
     <string name="setting_logout_fail">退出登录失败，请稍后重试</string>
-    <string name="setting_friend_confirm">海银财富信息技术部；上海浦东新区</string>
+    <string name="setting_company">公司</string>
     <string name="setting_black_list">移动开发经理021-80133943</string>
+    <string name="setting_department">部门</string>
+    <string name="setting_phone">电话</string>
+    <string name="setting_area">地区</string>
     <string name="setting_about">关于</string>
-    <string name="setting_friend_need_confirm"></string>
+    <string name="setting_Modify_password">修改登录密码</string>
+    <string name="company">海银财富总部</string>
+    <string name="department">信息技术部</string>
+    <string name="phone">18217622569</string>
+    <string name="area">上海浦东新区</string>
     <string name="setting_nick_name_change">修改昵称</string>
     <string name="setting_friend_confirm_change_err">修改验证类型失败</string>
 
@@ -84,13 +83,8 @@
     <string name="title_addfri">添加好友</string>
     <string name="add_detail_ID">帐号ID</string>
     <string name="add_detail_name">备注名</string>
-    <string name="add_detail_group"></string>‘［］］’］［
-    ／
-    ／
-    ；］／
-
-
-    <string name="add_detail_message"></string>
+    <string name="add_detail_group">好友分组</string>
+    <string name="add_detail_message">好友信息</string>
     <string name="add_friend_send">发送添加好友请求</string>
     <string name="add_friend_succeed">请求已发送</string>
     <string name="add_friend_added">已添加好友</string>
@@ -102,11 +96,11 @@
     <string name="add_friend_del_black_succ">移出黑名单成功</string>
 
     <!-- Manager group activity -->
-    <string name="title_manager_group"></string>
-    <string name="add_new_group"></string>
+    <string name="title_manager_group">新增分组</string>
+    <string name="add_new_group">添加分组</string>
     <string name="add_dialog_title"></string>
     <string name="add_dialog_subtitle"></string>
-    <string name="add_dialog_null"></string>
+    <string name="add_dialog_null">分组名不能为空</string>
     <string name="title_confirm_delete_group">确认删除改分组吗？</string>
     <string name="delete_dialog_subtitle">删除分组</string>
     <string name="delete_dialog_subtitle_sur">,该分组好友将移动到默认分组</string>
@@ -146,7 +140,7 @@
     <string name="profile_black">加入黑名单</string>
     <string name="profile_remark_edit">修改备注</string>
 
-    
+
     <string name="profile_chat">发送消息</string>
     <string name="profile_del">删除好友</string>
     <string name="profile_group">添加分组</string>

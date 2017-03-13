@@ -2,8 +2,6 @@ package timechat.fcgz.sj.time.utils;
 
 import android.media.MediaRecorder;
 import android.util.Log;
-
-import com.fcgz.sj.timchat.MyApplication;
 import java.io.File;
 import java.io.IOException;
 import java.io.RandomAccessFile;

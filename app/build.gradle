@@ -1,41 +1,40 @@
 apply plugin: 'com.android.application'
 
 android {
-
-    signingConfigs{
-        release{
-            storeFile file("$System.env.KEYSTORE_PATH")
-            storePassword "$System.env.STOREPASS"
-            keyAlias "$System.env.ALIAS"
-            keyPassword "$System.env.KEYPASS"
+    signingConfigs {
+        release {
+            storeFile file('D:/MyDownloads/mykey/keystore.jks')
+            storePassword '931011'
+            keyAlias 'keystore'
+            keyPassword '931011'
+            v2SigningEnabled false
         }
     }
-
-    packagingOptions{
+    packagingOptions {
         exclude '*.apk'
     }
     dexOptions {
         jumboMode true
         incremental false
     }
-    lintOptions{
+    lintOptions {
         abortOnError false
     }
-    buildTypes{
-        release{
+    buildTypes {
+        release {
             signingConfig signingConfigs.release
+            debuggable false
         }
     }
-
     compileSdkVersion 23
     buildToolsVersion '23.0.1'
-
     defaultConfig {
-        applicationId "com.tencent.qcloud.timchat"
+        applicationId 'timechat.fcgz.sj.time'
         minSdkVersion 16
         targetSdkVersion 23
         versionCode 1
         versionName "1.0"
+        signingConfig signingConfigs.release
     }
     buildTypes {
         release {
@@ -43,12 +42,13 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
 }
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
-    testCompile 'junit:junit:4.12'
     compile project(':presentation')
-    compile 'com.android.support:support-v4:23+'
-
+    compile 'com.android.support:support-v4:23.4.0'
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    testCompile 'junit:junit:4.12'
 }

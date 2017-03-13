@@ -18,8 +18,9 @@ import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.tencent.qcloud.presentation.viewfeatures.ChatView;
-import com.fcgz.sj.timchat.MyApplication;
 
+
+import timechat.fcgz.sj.time.MyApplication;
 import timechat.fcgz.sj.time.utils.FileUtil;
 
 import java.io.File;

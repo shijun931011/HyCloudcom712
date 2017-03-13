@@ -14,8 +14,9 @@ import android.widget.TextView;
 import com.tencent.TIMMessage;
 import com.tencent.TIMSoundElem;
 import com.tencent.TIMValueCallBack;
-import com.fcgz.sj.timchat.MyApplication;
 
+
+import timechat.fcgz.sj.time.MyApplication;
 import timechat.fcgz.sj.time.adapters.ChatAdapter;
 import timechat.fcgz.sj.time.utils.FileUtil;
 import timechat.fcgz.sj.time.utils.MediaUtil;

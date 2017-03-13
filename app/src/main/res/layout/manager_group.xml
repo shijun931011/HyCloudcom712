@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <com.tencent.qcloud.timchat.ui.customview.TemplateTitle
+    <timechat.fcgz.sj.time.ui.customview.TemplateTitle
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:canBack="true"
@@ -18,7 +18,6 @@
         android:background="@color/white"
         android:orientation="horizontal"
         >
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -34,9 +33,6 @@
             android:text="@string/add_new_group" />
 
     </LinearLayout>
-
-
-
     <ListView
         android:id="@+id/group_list"
         android:layout_width="match_parent"

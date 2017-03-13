@@ -6,7 +6,7 @@
     android:padding="5dp"
     android:orientation="vertical"
     android:background="@color/white"
-    tools:context="com.tencent.qcloud.timchat.ui.customview.DialogActivity">
+    tools:context="com.fcgz.sj.timchat.timechat.fcgz.sj.timchat.ui.customview.DialogActivity">
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

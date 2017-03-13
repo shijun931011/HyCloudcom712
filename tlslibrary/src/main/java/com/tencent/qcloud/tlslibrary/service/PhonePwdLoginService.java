@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-import com.tencent.qcloud.tlslibrary.activity.ImgCodeActivity;
+//import com.tencent.qcloud.tlslibrary.activity.ImgCodeActivity;
 import com.tencent.qcloud.tlslibrary.helper.Util;
 
 import tencent.tls.platform.TLSErrInfo;
@@ -64,6 +64,7 @@ public class PhonePwdLoginService {
                 Log.e(TAG, Util.getWellFormatMobile(countrycode, phone));
 
                 tlsService.TLSPwdLogin(Util.getWellFormatMobile(countrycode, phone), password, pwdLoginListener);
+//                tlsService.TLSPwdLogin(phone, password,pwdLoginListener);
             }
         });
     }
@@ -78,15 +79,15 @@ public class PhonePwdLoginService {
 
         @Override
         public void OnPwdLoginReaskImgcodeSuccess(byte[] picData) {
-            ImgCodeActivity.fillImageview(picData);
+//            ImgCodeActivity.fillImageview(picData);
         }
 
         @Override
         public void OnPwdLoginNeedImgcode(byte[] picData, TLSErrInfo errInfo) {
-            Intent intent = new Intent(context, ImgCodeActivity.class);
-            intent.putExtra(Constants.EXTRA_IMG_CHECKCODE, picData);
-            intent.putExtra(Constants.EXTRA_LOGIN_WAY, Constants.PHONEPWD_LOGIN);
-            context.startActivity(intent);
+////            Intent intent = new Intent(context, ImgCodeActivity.class);
+//            intent.putExtra(Constants.EXTRA_IMG_CHECKCODE, picData);
+//            intent.putExtra(Constants.EXTRA_LOGIN_WAY, Constants.PHONEPWD_LOGIN);
+//            context.startActivity(intent);
         }
 
         @Override

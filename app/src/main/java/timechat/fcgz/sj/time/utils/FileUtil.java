@@ -12,12 +12,14 @@ import android.provider.DocumentsContract;
 import android.provider.MediaStore;
 import android.util.Log;
 
-import com.fcgz.sj.timchat.MyApplication;
+
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
+
+import timechat.fcgz.sj.time.MyApplication;
 
 /**
  * 文件工具类

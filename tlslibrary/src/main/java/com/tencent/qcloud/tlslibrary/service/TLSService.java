@@ -26,18 +26,14 @@ import tencent.tls.platform.TLSUserInfo;
  * Created by dgy on 15/7/8.
  */
 public class TLSService {
-
     private TLSLoginHelper loginHelper;
     private TLSAccountHelper accountHelper;
 
-    private SmsLoginService smsLoginService;
-    private SmsRegisterService smsRegisterService;
-    private QQLoginService qqLoginService;
-    private WXLoginService wxLoginService;
+
     private AccountLoginService accountLoginService;
-    private AccountRegisterService accountRegisterService;
-    private PhonePwdLoginService phonePwdLoginService;
+//    private AccountRegisterService accountRegisterService;
     private PhonePwdRegisterService phonePwdRegisterService;
+    private PhonePwdLoginService phonePwdLoginService;
     private ResetPhonePwdService resetPhonePwdService;
     private static int lastErrno = -1;
 
@@ -110,20 +106,7 @@ public class TLSService {
 
     }
 
-    /**
-     * 代理TLSLoginHelper的接口
-     */
 
-    public void initSmsLoginService(Context context,
-                                    EditText txtCountryCode,
-                                    EditText txtPhoneNumber,
-                                    EditText txtCheckCode,
-                                    Button btn_requireCheckCode,
-                                    Button btn_login) { // 初始化短信登录服务
-        smsLoginService = new SmsLoginService(context, txtCountryCode, txtPhoneNumber, txtCheckCode,
-                btn_requireCheckCode, btn_login);
-
-    }
 
     public void initAccountLoginService(Context context,
                                         EditText txt_username,
@@ -136,31 +119,23 @@ public class TLSService {
                                          EditText txt_countrycode,
                                          EditText txt_phone,
                                          EditText txt_pwd,
-                                         Button btn_login) {
-        phonePwdLoginService = new PhonePwdLoginService(context, txt_countrycode, txt_phone, txt_pwd, btn_login);
-    }
-
-    public void initPhonePwdRegisterService(Context context,
-                                            EditText txt_countryCode,
-                                            EditText txt_phoneNumber,
-                                            EditText txt_checkCode,
-                                            Button btn_requireCheckCode,
-                                            Button btn_verify) {
-        phonePwdRegisterService = new PhonePwdRegisterService(context, txt_countryCode, txt_phoneNumber, txt_checkCode, btn_requireCheckCode, btn_verify);
+                                         Button btn_login){
+        phonePwdLoginService=new PhonePwdLoginService(context,txt_countrycode,txt_phone,txt_pwd,btn_login);
     }
 
     public void initResetPhonePwdService(Context context,
-                                            EditText txt_countryCode,
-                                            EditText txt_phoneNumber,
-                                            EditText txt_checkCode,
-                                            Button btn_requireCheckCode,
-                                            Button btn_verify) {
-        resetPhonePwdService = new ResetPhonePwdService(context, txt_countryCode, txt_phoneNumber, txt_checkCode, btn_requireCheckCode, btn_verify);
+                                         EditText txt_countryCode,
+                                         EditText txt_phoneNumber,
+                                         EditText txt_checkCode,
+                                         Button btn_requireCheckCode,
+                                         Button btn_verify){
+        resetPhonePwdService=new ResetPhonePwdService(context, txt_countryCode, txt_phoneNumber,txt_checkCode,btn_requireCheckCode,btn_verify);
     }
 
-    public void initGuestLoginService(Context context, Button button) {
-        new GuestLoginService(context, button);
-    }
+
+//    public void initGuestLoginService(Context context, Button button) {
+//        new GuestLoginService(context, button);
+//    }
 
 
     public int smsLogin(String countryCode, String phoneNumber, TLSSmsLoginListener smsLoginListener) {
@@ -239,19 +214,6 @@ public class TLSService {
         return loginHelper.getGuestIdentifier();
     }
 
-    /**
-     * 代理TLSAccountHelper的接口
-     */
-
-    public void initSmsRegisterService(Context context,
-                                       EditText txtCountryCode,
-                                       EditText txtPhoneNumber,
-                                       EditText txtCheckCode,
-                                       Button btn_requireCheckCode,
-                                       Button btn_register) { // 初始化短信注册服务
-        smsRegisterService = new SmsRegisterService(context, txtCountryCode, txtPhoneNumber, txtCheckCode,
-                btn_requireCheckCode, btn_register);
-    }
 
     public int smsRegAskCode(String countryCode, String phoneNumber, TLSSmsRegListener listener) {
         return accountHelper.TLSSmsRegAskCode(Util.getWellFormatMobile(countryCode, phoneNumber), listener);
@@ -286,12 +248,13 @@ public class TLSService {
         return accountHelper.TLSPwdRegAskCode(Util.getWellFormatMobile(countryCode, phoneNumber), listener);
     }
 
-    public void initAccountRegisterService(Context context,
-                                           EditText txt_username,
-                                           EditText txt_password,
-                                           EditText txt_repassword,
+    public void initPhonePwdRegisterService(Context context,
+                                            EditText txt_countryCode,
+                                           EditText txt_phoneNumber,
+                                           EditText txt_checkCode,
+                                           Button btn_requireCheckCode,
                                            Button btn_register) {
-        accountRegisterService = new AccountRegisterService(context, txt_username, txt_password, txt_repassword, btn_register);
+        phonePwdRegisterService = new PhonePwdRegisterService(context,txt_countryCode,txt_phoneNumber,txt_checkCode, btn_requireCheckCode,btn_register);
     }
 
     public int TLSPwdResetAskCode(String countryCode, String phoneNumber, TLSPwdResetListener listener) {
@@ -302,33 +265,6 @@ public class TLSService {
         return accountHelper.TLSPwdResetVerifyCode(code, listener);
     }
 
-    /**
-    * 代理QQ登录的接口
-    * */
-    public void initQQLoginService(Activity activity, Button btn_qqlogin) {
-        qqLoginService = new QQLoginService(activity, btn_qqlogin);
-    }
-
-    public boolean qqHasLogined() {
-        return qqLoginService.qqHasLogined();
-    }
-
-    public void onActivityResultForQQLogin(int requestCode, int resultCode, Intent data) {
-        qqLoginService.onActivityResult(requestCode, resultCode, data);
-    }
-
-    public void qqLogOut() {
-        try {
-            qqLoginService.qqLogout();
-        } catch (Exception e) {}
-    }
-
-    /**
-     * 代理微信登录的接口
-     * */
-    public void initWXLoginService(Context context, Button btn_wxlogin) {
-        wxLoginService = new WXLoginService(context, btn_wxlogin);
-    }
 
 
     public interface RefreshUserSigListener extends TLSRefreshUserSigListener {

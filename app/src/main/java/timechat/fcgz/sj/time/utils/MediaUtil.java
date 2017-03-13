@@ -4,10 +4,12 @@ import android.media.MediaPlayer;
 import android.net.Uri;
 import android.util.Log;
 
-import com.fcgz.sj.timchat.MyApplication;
+
 
 import java.io.FileInputStream;
 import java.io.IOException;
+
+import timechat.fcgz.sj.time.MyApplication;
 
 /**
  * 媒体播放工具

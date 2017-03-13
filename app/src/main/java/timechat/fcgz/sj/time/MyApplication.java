@@ -2,7 +2,6 @@ package timechat.fcgz.sj.time;
 
 import android.app.Application;
 import android.content.Context;
-
 import com.tencent.TIMGroupReceiveMessageOpt;
 import com.tencent.TIMManager;
 import com.tencent.TIMOfflinePushListener;

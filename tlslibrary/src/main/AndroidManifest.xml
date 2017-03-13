@@ -1,5 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.tencent.qcloud.tlslibrary">
+
     <uses-sdk android:minSdkVersion="11" />
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -12,70 +14,62 @@
     <uses-permission android:name="android.permission.GET_TASKS" />
     <uses-permission android:name="oicq.wlogin_sdk.permission.WloginProvider.READ" />
     <uses-permission android:name="oicq.wlogin_sdk.permission.WloginProvider.WRITE" />
-    <uses-permission android:name="android.permission.SEND_SMS" />     <!-- 发送短信-->
-    <uses-permission android:name="android.permission.READ_SMS" />     <!-- 读取短信 -->
-    <uses-permission android:name="android.permission.WRITE_SMS" />    <!-- 写入消息 -->
-    <uses-permission android:name="android.permission.RECEIVE_SMS" />  <!-- 接收消息 -->
+    <uses-permission android:name="android.permission.SEND_SMS" /> <!-- 发送短信 -->
+    <uses-permission android:name="android.permission.READ_SMS" /> <!-- 读取短信 -->
+    <uses-permission android:name="android.permission.WRITE_SMS" /> <!-- 写入消息 -->
+    <uses-permission android:name="android.permission.RECEIVE_SMS" /> <!-- 接收消息 -->
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application>
+        <meta-data
+            android:name="com.tencent.rdm.uuid"
+            android:value="41434af4-5144-4966-babc-a99d9a80fa06" />
 
- <meta-data android:name="com.tencent.rdm.uuid" android:value="41434af4-5144-4966-babc-a99d9a80fa06" />
         <activity
-            android:name="com.tencent.qcloud.tlslibrary.activity.HostLoginActivity"
+            android:name=".activity.HostLoginActivity"
             android:label="@string/tencent_tls_ui_app_name"
-
-            android:theme="@style/tencent_tls_ui_theme">
-        </activity>
+            android:theme="@style/tencent_tls_ui_theme"></activity>
         <activity
-            android:name="com.tencent.qcloud.tlslibrary.activity.HostRegisterActivity"
+            android:name=".activity.HostRegisterActivity"
             android:label="@string/tencent_tls_ui_title_activity_host_register"
             android:launchMode="singleTask"
-            android:theme="@style/tencent_tls_ui_theme">
-        </activity>
+            android:theme="@style/tencent_tls_ui_theme"></activity>
         <activity
-            android:name="com.tencent.qcloud.tlslibrary.activity.IndependentLoginActivity"
+            android:name=".activity.IndependentLoginActivity"
             android:label="@string/tencent_tls_ui_title_activity_independent_login"
-
-            android:theme="@style/tencent_tls_ui_theme" >
-        </activity>
+            android:theme="@style/tencent_tls_ui_theme"></activity>
         <activity
-            android:name="com.tencent.qcloud.tlslibrary.activity.IndependentRegisterActivity"
+            android:name=".activity.IndependentRegisterActivity"
             android:label="@string/tencent_tls_ui_title_activity_independent_register"
             android:launchMode="singleTask"
-            android:theme="@style/tencent_tls_ui_theme" >
-        </activity>
+            android:theme="@style/tencent_tls_ui_theme"></activity>
         <activity
-            android:name="com.tencent.qcloud.tlslibrary.activity.ImgCodeActivity"
+            android:name=".activity.ImgCodeActivity"
             android:label="@string/tencent_tls_ui_title_activity_imgcode"
             android:launchMode="singleTask"
-            android:theme="@style/tencent_tls_ui_theme">
-        </activity>
+            android:theme="@style/tencent_tls_ui_theme"></activity>
         <activity
-            android:name="com.tencent.qcloud.tlslibrary.activity.PhonePwdLoginActivity"
+            android:name=".activity.PhonePwdLoginActivity"
             android:label="@string/tencent_tls_ui_title_activity_phone_pwd"
             android:launchMode="singleTask"
-            android:theme="@style/tencent_tls_ui_theme">
-        </activity>
+            android:theme="@style/tencent_tls_ui_theme"></activity>
         <activity
-            android:name="com.tencent.qcloud.tlslibrary.activity.PhonePwdRegisterActivity"
+            android:name=".activity.PhonePwdRegisterActivity"
             android:label="@string/tencent_tls_ui_title_activity_phone_pwd_register"
             android:launchMode="singleTask"
-            android:theme="@style/tencent_tls_ui_theme">
-        </activity>
+            android:theme="@style/tencent_tls_ui_theme"></activity>
         <activity
-            android:name="com.tencent.qcloud.tlslibrary.activity.ResetPhonePwdActivity"
+            android:name=".activity.ResetPhonePwdActivity"
             android:label="@string/tencent_tls_ui_title_activity_reset_phone_pwd"
             android:launchMode="singleTask"
-            android:theme="@style/tencent_tls_ui_theme">
-        </activity>
+            android:theme="@style/tencent_tls_ui_theme"></activity>
 
         <!-- QQ登录 -->
         <activity
             android:name="com.tencent.tauth.AuthActivity"
             android:launchMode="singleTask"
-            android:noHistory="true" >
+            android:noHistory="true">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
 
@@ -89,7 +83,7 @@
             android:name="com.tencent.connect.common.AssistActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-
+        <activity android:name=".activity.ForgetPasswordActivity"></activity>
     </application>
 
 </manifest>

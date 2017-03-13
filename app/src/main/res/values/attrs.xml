@@ -4,6 +4,7 @@
     <declare-styleable name="TemplateTitle">
         <!-- 标题文案 -->
         <attr name="titleText" format="string"/>
+
         <!-- 是否有back按钮 -->
         <attr name="canBack" format="boolean"/>
         <!-- back按钮文案 -->

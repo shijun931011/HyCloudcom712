@@ -47,8 +47,6 @@ public class GroupManagerPresenter {
         infoView = view2;
         manageView = view3;
     }
-
-
     /**
      * 获取群管理最有一条消息,和未读消息数
      * 包括：加群等已决和未决的消息
@@ -97,11 +95,6 @@ public class GroupManagerPresenter {
             }
         });
     }
-
-
-
-
-
 
     /**
      * 按照群名称搜索群

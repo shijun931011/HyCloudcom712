@@ -15,8 +15,9 @@ import android.widget.TextView;
 import com.tencent.TIMFaceElem;
 import com.tencent.TIMMessage;
 import com.tencent.TIMTextElem;
-import com.fcgz.sj.timchat.MyApplication;
 
+
+import timechat.fcgz.sj.time.MyApplication;
 import timechat.fcgz.sj.time.adapters.ChatAdapter;
 import timechat.fcgz.sj.time.utils.EmoticonUtil;
 

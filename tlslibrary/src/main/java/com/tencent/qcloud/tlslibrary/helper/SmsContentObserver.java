@@ -18,8 +18,6 @@ import java.util.regex.Pattern;
  * Created by dgy on 15/8/15.
  * 监听短信数据库
  */
-
-
 public class SmsContentObserver extends ContentObserver {
     private Cursor cursor;
     private Activity activity;
