@@ -6,12 +6,19 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.graphics.Matrix;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
 import android.net.Uri;
-import android.os.Environment;
+
 import android.provider.MediaStore;
 import android.util.Log;
 
+
+import java.io.BufferedOutputStream;
 import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -204,4 +211,123 @@ public class ImageUtils {
         else return null;
 
     }
+
+
+    public static Uri getOutputFileUri(){
+        return Uri.fromFile(getOutputFile());
+    }
+    private  static File getOutputFile(){
+        File StoreageDir = null;
+        try{
+            StoreageDir = new File(Constant.EXTERNAL_HEADICO_DIR);
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+        if (!StoreageDir.exists()) {
+            if (!StoreageDir.mkdirs()) {
+                return null;
+            }
+        }
+        // 原照片
+        File mediaFile;
+        mediaFile = new File(StoreageDir.getPath() + File.separator
+                + "userPhoto.cache");
+
+        return mediaFile;
+
+    }
+
+    public static Bitmap DrawableToBitmap(Drawable drawable) {
+        Bitmap bitmap = ((BitmapDrawable) drawable).getBitmap();
+        return bitmap;
+    }
+
+
+    /**
+     * 保存图像图片
+     *
+     * @param bitmap
+     * @param _file
+     * @throws IOException
+     */
+    public static void saveBitmapToFile(Bitmap bitmap, String _file)
+            throws IOException {
+        BufferedOutputStream os = null;
+        try {
+            File file = new File(_file);
+            if (file.exists()) {
+                file.delete();
+            }
+            int end = _file.lastIndexOf(File.separator);
+            String _filePath = _file.substring(0, end);
+            File filePath = new File(_filePath);
+            if (!filePath.exists()) {
+                filePath.mkdirs();
+            }
+//            Log.d(TAG, "Successfully created StorageDir: " + file);
+            file.createNewFile();
+            os = new BufferedOutputStream(new FileOutputStream(file));
+
+            getnewBitmap(bitmap).compress(Bitmap.CompressFormat.PNG, 100, os);
+            // bitmap.compress(Bitmap.CompressFormat.PNG, 100, os);
+        } finally {
+            if (os != null) {
+                try {
+                    os.close();
+                } catch (IOException e) {
+                    Log.d("ImageUtil", "保存图片出错");
+                }
+            }
+        }
+    }
+
+    /**
+     * 缩放到固定大小
+     *
+     */
+    private static Bitmap getnewBitmap(Bitmap bitmap) {
+
+        // 获取这个图片的宽和高
+        int width = bitmap.getWidth();
+        int height = bitmap.getHeight();
+
+        // 定义预转换成的图片的宽度和高度
+        int newWidth = 72;
+        int newHeight = 72;
+
+        // 计算缩放率，新尺寸除原始尺寸
+        float scaleWidth = ((float) newWidth) / width;
+        float scaleHeight = ((float) newHeight) / height;
+
+        // 创建操作图片用的matrix对象
+        Matrix matrix = new Matrix();
+
+        // 缩放图片动作
+        matrix.postScale(scaleWidth, scaleHeight);
+
+        // 旋转图片 动作
+        // matrix.postRotate(45);
+
+        // 创建新的图片
+        Bitmap resizedBitmap = Bitmap.createBitmap(bitmap, 0, 0, width, height,
+                matrix, true);
+
+        return resizedBitmap;
+
+    }
+
+    public static Drawable filepathImagetoDrawable(String photopath) {
+
+        Drawable drawable = null;
+        File mPhoto = new File(photopath);
+        if (mPhoto.exists()) {
+            drawable = new BitmapDrawable(photopath);
+        }
+        return drawable;
+
+    }
+
+
+
+
 }

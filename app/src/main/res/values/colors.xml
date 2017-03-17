@@ -28,6 +28,15 @@
     <color name="btn_text_hover">#CCFFFFFF</color>
     <!--蒙版-->
     <color name="colorMask">#66000000</color>
+    <color name="dialogutil_gray">#8F8F8F</color>
+    <color name="dialogutil_blue">#037BFF</color>
+    <!--白色-->
+    <color name="write_color">#ffffff</color>
+    <!-- 橙色 -->
+    <color name="orange_corlor">#FF9600</color>
+
+
+
 
 
 

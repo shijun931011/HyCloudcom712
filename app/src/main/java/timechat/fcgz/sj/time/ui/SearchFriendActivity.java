@@ -12,6 +12,7 @@ import com.tencent.TIMUserProfile;
 import com.tencent.qcloud.presentation.presenter.FriendshipManagerPresenter;
 import com.tencent.qcloud.presentation.viewfeatures.FriendInfoView;
 
+import timechat.fcgz.sj.time.R;
 import timechat.fcgz.sj.time.adapters.ProfileSummaryAdapter;
 import timechat.fcgz.sj.time.model.FriendProfile;
 import timechat.fcgz.sj.time.model.ProfileSummary;
@@ -35,15 +36,15 @@ public class SearchFriendActivity extends Activity implements FriendInfoView, Ad
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(timechat.fcgz.sj.time.R.layout.activity_addnew);
-        mSearchInput = (EditText) findViewById(timechat.fcgz.sj.time.R.id.inputSearch);
-        mSearchList =(ListView) findViewById(timechat.fcgz.sj.time.R.id.list);
-        tvNoResult = (TextView) findViewById(timechat.fcgz.sj.time.R.id.noResult);
-        adapter = new ProfileSummaryAdapter(this, timechat.fcgz.sj.time.R.layout.item_profile_summary, list);
+        setContentView(R.layout.activity_addnew);
+        mSearchInput = (EditText) findViewById(R.id.inputSearch);
+        mSearchList =(ListView) findViewById(R.id.list);
+        tvNoResult = (TextView) findViewById(R.id.noResult);
+        adapter = new ProfileSummaryAdapter(this, R.layout.item_profile_summary, list);
         mSearchList.setAdapter(adapter);
         mSearchList.setOnItemClickListener(this);
         presenter = new FriendshipManagerPresenter(this);
-        TextView tvCancel = (TextView) findViewById(timechat.fcgz.sj.time.R.id.cancel);
+        TextView tvCancel = (TextView) findViewById(R.id.cancel);
         tvCancel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -14,6 +14,7 @@ import android.view.WindowManager;
 import android.widget.ExpandableListView;
 import android.widget.TextView;
 
+import timechat.fcgz.sj.time.R;
 import timechat.fcgz.sj.time.adapters.ExpandGroupListAdapter;
 import timechat.fcgz.sj.time.model.FriendProfile;
 import timechat.fcgz.sj.time.model.FriendshipInfo;
@@ -35,9 +36,9 @@ public class ContactFragment extends Fragment {
                              Bundle savedInstanceState) {
 
         if (view == null){
-            view = inflater.inflate(timechat.fcgz.sj.time.R.layout.fragment_contact, container, false);
-            mGroupListView = (ExpandableListView) view.findViewById(timechat.fcgz.sj.time.R.id.groupList);
-            TemplateTitle title = (TemplateTitle) view.findViewById(timechat.fcgz.sj.time.R.id.contact_antionbar);
+            view = inflater.inflate(R.layout.fragment_contact, container, false);
+            mGroupListView = (ExpandableListView) view.findViewById(R.id.groupList);
+            TemplateTitle title = (TemplateTitle) view.findViewById(R.id.contact_antionbar);
             title.setMoreImgAction(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -69,10 +70,10 @@ public class ContactFragment extends Fragment {
 //    private TextView addGroup;
     private TextView managerGroup;
     private void showMoveDialog() {
-        inviteDialog = new Dialog(getActivity(), timechat.fcgz.sj.time.R.style.dialog);
-        inviteDialog.setContentView(timechat.fcgz.sj.time.R.layout.contact_more);
-        addFriend = (TextView) inviteDialog.findViewById(timechat.fcgz.sj.time.R.id.add_friend);
-        managerGroup = (TextView) inviteDialog.findViewById(timechat.fcgz.sj.time.R.id.manager_group);
+        inviteDialog = new Dialog(getActivity(), R.style.dialog);
+        inviteDialog.setContentView(R.layout.contact_more);
+        addFriend = (TextView) inviteDialog.findViewById(R.id.add_friend);
+        managerGroup = (TextView) inviteDialog.findViewById(R.id.manager_group);
 //        addGroup = (TextView) inviteDialog.findViewById(R.id.add_group);
         addFriend.setOnClickListener(new View.OnClickListener() {
             @Override

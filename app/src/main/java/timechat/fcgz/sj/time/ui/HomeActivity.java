@@ -2,8 +2,10 @@ package timechat.fcgz.sj.time.ui;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
 import android.provider.MediaStore;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTabHost;
@@ -27,6 +29,8 @@ import timechat.fcgz.sj.time.utils.ImageUtils;
 
 import com.tencent.qcloud.tlslibrary.service.TlsBusiness;
 
+import java.io.File;
+
 import static timechat.fcgz.sj.time.MyApplication.getContext;
 
 /**
@@ -42,6 +46,7 @@ public class HomeActivity extends FragmentActivity {
     private String mTextviewArray[] = {"contact", "conversation", "setting"};
     private ImageView msgUnread;
     private CircleImageView head_img;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -106,8 +111,12 @@ public class HomeActivity extends FragmentActivity {
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        Log.d("1111", "onActivityResult: " + data);
-        super.onActivityResult(requestCode,resultCode,data);
+        Log.d("1111", "onActivityResult: " + data + "    " + resultCode);
+//        super.onActivityResult(requestCode,resultCode,data);
+        //防止空指针异常
+        if (resultCode != RESULT_OK){
+            return;
+        }
         switch (requestCode){
             case ImageUtils.REQUEST_CODE_FROM_ALBUM: {
                 if (resultCode == RESULT_CANCELED) {   //取消操作
@@ -118,7 +127,6 @@ public class HomeActivity extends FragmentActivity {
                 ImageUtils.copyImageUri(this,imageUri);
                 ImageUtils.cropImageUri(this, ImageUtils.getCurrentUri(), 200, 200);
                 break;
-
             }
             case ImageUtils.REQUEST_CODE_FROM_CAMERA: {
                 if (resultCode == RESULT_CANCELED) {     //取消操作
