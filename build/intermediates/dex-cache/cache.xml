@@ -187,7 +187,7 @@
         jumboMode="true"
         optimize="true"
         revision="23.0.1"
-        sha1="f154c90ae5909697bdacf32710fa3ff9d55ad3af">
+        sha1="b306beb88605142c5d87fc0dfda1b20bb7392535">
         <dex dex="D:\MyDownloads\HyCloudcom712\HyCloudcom712\HyCloudcom712\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_04693d65e3ddc902aefb77edb147ba76850729fd\classes.dex" />
     </item>
     <item
@@ -223,7 +223,7 @@
         jumboMode="true"
         optimize="true"
         revision="23.0.1"
-        sha1="7085a3a962e62e669c128c4cc600e51626e2d34f">
+        sha1="f162286028fb7a62f7eaa55c5d116417e1678b40">
         <dex dex="D:\MyDownloads\HyCloudcom712\HyCloudcom712\HyCloudcom712\app\build\intermediates\pre-dexed\release\HyCloudcom712-tlslibrary-unspecified_52b125153ccd97f2c12b464fd8b13a91f58313ea.jar" />
     </item>
     <item
@@ -286,7 +286,7 @@
         jumboMode="true"
         optimize="true"
         revision="23.0.1"
-        sha1="6ee9769d7091b2f7610c8d507fc9a6304433a5e4">
+        sha1="3f57f13ecf7be44070946d61ced1bb8022699ffa">
         <dex dex="D:\MyDownloads\HyCloudcom712\HyCloudcom712\HyCloudcom712\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_2c8dd2f121494b51faea5dbfe12125350787f4d4\classes.dex" />
     </item>
     <item

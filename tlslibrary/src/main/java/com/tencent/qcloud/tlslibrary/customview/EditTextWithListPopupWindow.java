@@ -25,8 +25,6 @@ public class EditTextWithListPopupWindow extends EditText {
     private final int DRAWABLE_RIGHT = 2;
     private final int UP_ARROW = 0;
     private final int DOWN_ARROW = 1;
-
-
     private ListPopupWindow listPopupWindow;
     private Drawable rightDrawable;
     private String[] list;

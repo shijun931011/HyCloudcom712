@@ -52,7 +52,7 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginBottom="10dp"
                 android:windowSoftInputMode="stateAlwaysHidden"
-                android:text="中国大陆+86"
+                android:text="中国 +86"
                 />
             <RelativeLayout
                 android:layout_width="match_parent"

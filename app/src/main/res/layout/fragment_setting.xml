@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/background"
-    tools:context="com.fcgz.sj.timchat.timechat.fcgz.sj.timchat.ui.SettingFragment">
+    tools:context="timchat.fcgz.sj.time.ui.SettingFragment">
 
     <timechat.fcgz.sj.time.ui.customview.TemplateTitle
         android:layout_width="match_parent"

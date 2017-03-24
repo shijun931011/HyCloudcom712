@@ -10,6 +10,7 @@ import android.widget.Toast;
 import com.tencent.TIMCallBack;
 import com.tencent.qcloud.presentation.business.LoginBusiness;
 
+import timechat.fcgz.sj.time.R;
 import timechat.fcgz.sj.time.model.FriendshipInfo;
 import timechat.fcgz.sj.time.model.UserInfo;
 import timechat.fcgz.sj.time.ui.SplashActivity;
@@ -21,7 +22,7 @@ public class DialogActivity extends Activity implements View.OnClickListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
-        setContentView(timechat.fcgz.sj.time.R.layout.activity_dialog);
+        setContentView(R.layout.activity_dialog);
         setFinishOnTouchOutside(false);
 
     }
@@ -34,22 +35,22 @@ public class DialogActivity extends Activity implements View.OnClickListener {
     @Override
     public void onClick(View v) {
         switch (v.getId()){
-            case timechat.fcgz.sj.time.R.id.btnOk:
+            case R.id.btnOk:
                 LoginBusiness.loginIm(UserInfo.getInstance().getId(), UserInfo.getInstance().getUserSig(), new TIMCallBack() {
                     @Override
                     public void onError(int i, String s) {
-                        Toast.makeText(DialogActivity.this, getString(timechat.fcgz.sj.time.R.string.login_error), Toast.LENGTH_SHORT).show();
+                        Toast.makeText(DialogActivity.this, getString(R.string.login_error), Toast.LENGTH_SHORT).show();
                         logout();
                     }
 
                     @Override
                     public void onSuccess() {
-                        Toast.makeText(DialogActivity.this, getString(timechat.fcgz.sj.time.R.string.login_succ), Toast.LENGTH_SHORT).show();
+                        Toast.makeText(DialogActivity.this, getString(R.string.login_succ), Toast.LENGTH_SHORT).show();
                         finish();
                     }
                 });
                 break;
-            case timechat.fcgz.sj.time.R.id.btnCancel:
+            case R.id.btnCancel:
                 logout();
                 break;
         }

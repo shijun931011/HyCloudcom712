@@ -79,6 +79,7 @@ public class SearchFriendActivity extends Activity implements FriendInfoView, Ad
                 return true;
             default:
                 return super.onKeyUp(keyCode, event);
+
         }
     }
 

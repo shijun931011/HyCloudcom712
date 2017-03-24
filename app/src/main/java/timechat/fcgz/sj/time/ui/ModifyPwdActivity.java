@@ -82,7 +82,6 @@ public class ModifyPwdActivity extends Activity {
         final EditText editText = (EditText) view.findViewById(MResource.getIdByName(getApplication(),"id","password"));
         Button btn_confirm = (Button) view.findViewById(MResource.getIdByName(getApplication(),"id","btn_confirm"));
         Button btn_cancel = (Button) view.findViewById(MResource.getIdByName(getApplication(),"id", "btn_cancel"));
-
         final AlertDialog dialog = new AlertDialog.Builder(this).setView(view).setCancelable(false).create();
         dialog.show();
         btn_cancel.setOnClickListener(new View.OnClickListener() {
@@ -118,20 +117,19 @@ public class ModifyPwdActivity extends Activity {
                     @Override
                     public void OnPwdResetCommitSuccess(TLSUserInfo tlsUserInfo) {
                         Util.showToast(ModifyPwdActivity.this,"重置密码成功");
-//                        ((EditText) findViewById(MResource.getIdByName(getApplication(), "id", "selectCountryCode"))).setText(countryCode);
-//                        ((EditText) findViewById(MResource.getIdByName(getApplication(), "id", "phone"))).setText(phoneNumber);
-//                        ((EditText) findViewById(MResource.getIdByName(getApplication(), "id", "psaaword"))).setText(regPassword);
-//                        findViewById(MResource.getIdByName(getApplication(), "id", "btn_login")).performClick();
+
                     }
 
                     @Override
                     public void OnPwdResetFail(TLSErrInfo tlsErrInfo) {
                         Util.notOK(ModifyPwdActivity.this, tlsErrInfo);
+
                     }
 
                     @Override
                     public void OnPwdResetTimeout(TLSErrInfo tlsErrInfo) {
                         Util.notOK(ModifyPwdActivity.this,tlsErrInfo);
+
                     }
                 });
             }

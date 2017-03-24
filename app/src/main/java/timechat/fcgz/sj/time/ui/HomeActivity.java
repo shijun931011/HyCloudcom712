@@ -47,7 +47,6 @@ public class HomeActivity extends FragmentActivity {
     private ImageView msgUnread;
     private CircleImageView head_img;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -112,7 +111,7 @@ public class HomeActivity extends FragmentActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         Log.d("1111", "onActivityResult: " + data + "    " + resultCode);
-//        super.onActivityResult(requestCode,resultCode,data);
+        super.onActivityResult(requestCode,resultCode,data);
         //防止空指针异常
         if (resultCode != RESULT_OK){
             return;
@@ -144,10 +143,10 @@ public class HomeActivity extends FragmentActivity {
                 }
                 Uri imageUri = ImageUtils.getCurrentUri();
                 Log.d("shijun","imageUri"+imageUri);
-//                if (imageUri != null) {
-//                    Log.d("shijun","555");
-//                    head_img.setImageURI(imageUri);
-//                }
+                if (imageUri != null) {
+                    Log.d("shijun","555");
+                    head_img.setImageURI(imageUri);
+                }
                 break;
             }
             default:

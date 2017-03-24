@@ -96,9 +96,9 @@
         <activity android:name=".ui.customview.SearchGroupActivity" />
         <activity android:name=".ui.CreateGroupActivity" />
         <activity android:name=".ui.ManageFriendGroupActivity" />
-        <activity android:name=".ui.ModifyPwdActivity" android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity android:name=".ui.cameracrop.CropImage"></activity>
-        <activity android:name=".ui.cameracrop.MonitoredActivity"></activity>
+        <activity
+            android:name=".ui.ModifyPwdActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
 
     </application>
 

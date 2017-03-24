@@ -6,37 +6,57 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.Gravity;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.AdapterView;
+import android.widget.EditText;
 import android.widget.ExpandableListView;
+import android.widget.ListView;
 import android.widget.TextView;
+
+import com.tencent.TIMUserProfile;
+import com.tencent.qcloud.presentation.presenter.FriendshipManagerPresenter;
+import com.tencent.qcloud.presentation.viewfeatures.FriendInfoView;
 
 import timechat.fcgz.sj.time.R;
 import timechat.fcgz.sj.time.adapters.ExpandGroupListAdapter;
+import timechat.fcgz.sj.time.adapters.ProfileSummaryAdapter;
 import timechat.fcgz.sj.time.model.FriendProfile;
 import timechat.fcgz.sj.time.model.FriendshipInfo;
 
+import timechat.fcgz.sj.time.model.ProfileSummary;
 import timechat.fcgz.sj.time.ui.customview.TemplateTitle;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
 /**
  * 联系人界面
  */
-public class ContactFragment extends Fragment {
+public class ContactFragment extends Fragment{
     private View view;
     private ExpandGroupListAdapter mGroupListAdapter;
     private ExpandableListView mGroupListView;
+    private EditText mSearchinput;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
         if (view == null){
             view = inflater.inflate(R.layout.fragment_contact, container, false);
+            mSearchinput = (EditText) view.findViewById(R.id.inputSearch);
+            mSearchinput.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = new Intent(getActivity(), SearchFriendActivity.class);
+                    getActivity().startActivity(intent);
+                }
+            });
             mGroupListView = (ExpandableListView) view.findViewById(R.id.groupList);
             TemplateTitle title = (TemplateTitle) view.findViewById(R.id.contact_antionbar);
             title.setMoreImgAction(new View.OnClickListener() {
@@ -59,6 +79,8 @@ public class ContactFragment extends Fragment {
         }
         return view;
     }
+
+
     @Override
     public void onResume(){
         super.onResume();
